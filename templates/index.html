@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kriptoloji Projesi</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="tabs">
+    <button onclick="showClient()">İstemci (Şifreleme)</button>
+    <button onclick="showServer()">Sunucu (Deşifreleme)</button>
+</div>
+
+<div id="client">
+    <h2>İstemci - Mesaj Şifreleme</h2>
+
+    <select id="enc_algo">
+        <option value="CAESAR">Caesar Cipher</option>
+        <option value="VIGENERE">Vigenere</option>
+        <option value="AES">AES</option>
+        <option value="DES">DES</option>
+        <option value="HILL">Hill</option>
+        <option value="PLAYFAIR">Playfair</option>
+    </select>
+
+    <input id="enc_key" placeholder="Anahtar">
+    <textarea id="enc_msg" placeholder="Mesaj"></textarea>
+
+    <button onclick="encrypt()">Şifrele</button>
+    <p id="enc_result"></p>
+</div>
+
+<div id="server" style="display:none;">
+    <h2>Sunucu - Mesaj Deşifreleme</h2>
+
+    <select id="dec_algo">
+        <option value="CAESAR">Caesar Cipher</option>
+        <option value="VIGENERE">Vigenere</option>
+        <option value="AES">AES</option>
+        <option value="DES">DES</option>
+        <option value="HILL">Hill</option>
+        <option value="PLAYFAIR">Playfair</option>
+    </select>
+
+    <input id="dec_key" placeholder="Anahtar">
+    <textarea id="dec_msg" placeholder="Şifreli Mesaj"></textarea>
+
+    <button onclick="decrypt()">Deşifrele</button>
+    <p id="dec_result"></p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

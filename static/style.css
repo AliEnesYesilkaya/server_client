@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background: #f3f6fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* ÜST SEKME */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.tabs button {
+    border: none;
+    padding: 14px 30px;
+    margin: 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #e9eef7;
+    color: #333;
+}
+
+.tabs button:hover {
+    background: #dce4f2;
+}
+
+/* ORTA KART */
+#client, #server {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* BAŞLIK */
+h2 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* İSTEMCİ RENK */
+#client h2 {
+    color: #1e66f5;
+}
+
+/* SUNUCU RENK */
+#server h2 {
+    color: #1aa34a;
+}
+
+/* INPUT */
+select, input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #d0d7e2;
+    font-size: 15px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* BUTONLAR */
+#client button {
+    width: 100%;
+    padding: 14px;
+    background: #1e66f5;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#server button {
+    width: 100%;
+    padding: 14px;
+    background: #1aa34a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#client button:hover {
+    background: #1556d8;
+}
+
+#server button:hover {
+    background: #13823a;
+}
+
+/* SONUÇ */
+#enc_result, #dec_result {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f0f4fa;
+    font-weight: bold;
+    word-break: break-all;
+}
